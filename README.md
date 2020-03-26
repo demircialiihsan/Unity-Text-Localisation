@@ -110,4 +110,4 @@ Edit or delete existing keys easily.
 
 ![editsearch](https://user-images.githubusercontent.com/32217921/77644545-3555ed00-6f72-11ea-822b-0483033e23dc.png)
 
-For furher information see the sample scene the Assets folder.
+See the sample scene in Assets/Localisation/Sample folder.
