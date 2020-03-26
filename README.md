@@ -32,6 +32,16 @@ Note that the key is now in black color. This means that the key is valid.
 
 ![edited](https://user-images.githubusercontent.com/32217921/77643621-c62bc900-6f70-11ea-9c21-fc0edbe52a5d.png)
 
+### Inserting New Line
+
+Insert line breaks by hitting return key as usual.
+
+![return](https://user-images.githubusercontent.com/32217921/77662407-df427300-6f8c-11ea-9797-33736ace9f88.png)
+
+Alternatively, it is possible to insert new line via "\n". It will be converted to new line.
+
+![backslashn](https://user-images.githubusercontent.com/32217921/77662428-e8cbdb00-6f8c-11ea-9a15-3a8f8c57e8ef.png)
+
  ## Add New Languages
  
  Open Assets/Localisation/Scripts/Languages.cs file. By default there are four languages defined.
