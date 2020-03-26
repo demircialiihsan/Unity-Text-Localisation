@@ -64,18 +64,18 @@ New languages will appear automatically in the edit window.
 
  ## Delete Existing Languages
  
- Removing a language from the middle of the list will cause some conflicts. After removing language from enum, it is recommended to delete column of that language from Assets/Localisation/Resources/Localistaion.csv via some software such as Excel. Also all the keys can be manually updated from the inspector as explained.
+ Removing a language from the middle of the list will cause some conflicts. After removing language from enum, it is recommended to delete column of that language from Assets/Localisation/Resources/Localisation.csv via some software such as Excel. Also all the keys can be manually updated from the inspector as explained.
  
  **Being additive when building localisation system is strongly recommended.**
 
  ## Runtime Localisation
 
-In runtime, you can get these values from any script.
+In runtime, you can get localised values from any script.
 ```csharp
 string localisedString = LocalisationManager.GetLocalisedValue(sample.key);
 ``` 
 
-Since English is the default language, former code should return English value. You can change the language beforehand.
+Since English is the default language, former code should return the English value. You can change the language beforehand.
 ```csharp
 LocalisationManager.ChangeLanguage(Language.German);
 string germanSample = LocalisationManager.GetLocalisedValue(sample.key);
