@@ -32,6 +32,44 @@ Note that the key is now in black color. This means that the key is valid.
 
 ![edited](https://user-images.githubusercontent.com/32217921/77643621-c62bc900-6f70-11ea-9c21-fc0edbe52a5d.png)
 
+ ## Add New Languages
+ 
+ Open Assets/Localisation/Scripts/Languages.cs file. By default there are four languages defined.
+ ```csharp
+public enum Language
+{
+    English,
+    Turkish,
+    German,
+    Spanish
+}
+``` 
+
+ Add desired language(s).
+ ```csharp
+public enum Language
+{
+    English,
+    Turkish,
+    German,
+    Spanish,
+    Russian,
+    Japanese
+}
+``` 
+
+New languages will appear automatically in the edit window.
+
+![newlangs](https://user-images.githubusercontent.com/32217921/77647710-f6c33100-6f77-11ea-916f-39a83c6ad96e.png)
+
+ ## Delete Existing Languages
+ 
+ Removing a language from the middle of the list will cause some conflicts. After removing language from enum, it is recommended to delete column of that language from Assets/Localisation/Resources/Localistaion.csv via some software such as Excel. Also all the keys can be manually updated from the inspector as explained.
+ 
+ **Being additive when building localisation system is strongly recommended.**
+
+ ## Runtime Localisation
+
 In runtime, you can get these values from any script.
 ```csharp
 string localisedString = LocalisationManager.GetLocalisedValue(sample.key);
