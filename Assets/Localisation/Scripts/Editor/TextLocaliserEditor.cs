@@ -62,8 +62,11 @@ namespace Localisation
             if (GUILayout.Button("Update"))
             {
                 for (int i = 0; i < values.Length; i++)
+                {
                     if (values[i] == null)
                         values[i] = string.Empty;
+                    values[i] = values[i].Replace("\n", "\\n");
+                }
 
                 LocalisationManager.Replace(key, values);
 
