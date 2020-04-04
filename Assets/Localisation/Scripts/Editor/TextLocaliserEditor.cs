@@ -94,17 +94,22 @@ namespace Localisation
         public string value;
         public Vector2 scroll;
         public Dictionary<string, string> anyDictionary;
+
+        private static SerializedProperty sp;
+        private static TextLocaliserSearchWindow instance;
         
-        public static void Open()
+        public static void Open(SerializedProperty sp)
         {
-            TextLocaliserSearchWindow searchWindow = (TextLocaliserSearchWindow)CreateInstance(typeof(TextLocaliserSearchWindow));
-            searchWindow.titleContent = new GUIContent("Localisation Search");
+            TextLocaliserSearchWindow.sp = sp;
+
+            instance = (TextLocaliserSearchWindow)CreateInstance(typeof(TextLocaliserSearchWindow));
+            instance.titleContent = new GUIContent("Localisation Search");
 
             Vector2 mouse = GUIUtility.GUIToScreenPoint(Event.current.mousePosition);
             Rect rect = new Rect(mouse.x - 450, mouse.y + 10, 10, 10);
-            searchWindow.ShowAsDropDown(rect, new Vector2(480, 250));
+            instance.ShowAsDropDown(rect, new Vector2(480, 250));
 
-            searchWindow.value = string.Empty; // show all results
+            instance.value = string.Empty; // show all results
         }
         
         private void OnEnable()
@@ -131,7 +136,12 @@ namespace Localisation
                 if (element.Key.ToLower().Contains(value.ToLower()))
                 {
                     EditorGUILayout.BeginHorizontal("box");
-                    EditorGUILayout.LabelField(element.Key);
+                    if (GUILayout.Button(element.Key))
+                    {
+                        sp.stringValue = element.Key;
+                        sp.serializedObject.ApplyModifiedProperties();
+                        instance.Close();
+                    }
                     
                     GUIContent editContent = new GUIContent("edit");
 

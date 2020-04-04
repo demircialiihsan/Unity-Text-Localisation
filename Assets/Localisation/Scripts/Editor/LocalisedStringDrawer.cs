@@ -50,7 +50,7 @@ namespace Localisation
 
             if (GUI.Button(position, searchContent))
             {
-                TextLocaliserSearchWindow.Open();
+                TextLocaliserSearchWindow.Open(key);
             }
 
             EditorGUI.EndProperty();
