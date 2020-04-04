@@ -18,29 +18,29 @@ public LocalisedString sample;
 
 From the inspector, you can edit that Localised String on your attached script.
 
-![ins](https://user-images.githubusercontent.com/32217921/77640598-bc539700-6f6b-11ea-8921-67bc720e27a6.png)
+![ins](https://user-images.githubusercontent.com/32217921/78459327-ee2dd180-76c0-11ea-9690-0d448f015243.png)
 
-Type a key and click edit button to localise new value.
+Type a key and click edit button to localise a new value.
 
-![unedited](https://user-images.githubusercontent.com/32217921/77641026-692e1400-6f6c-11ea-91b7-549f6591b9a3.png)
+![unedited](https://user-images.githubusercontent.com/32217921/78459343-043b9200-76c1-11ea-8751-dcce74ce0598.png)
 
-Enter localised values for the key and click update button on the bottom of the prompted window.
+Enter the localised values for the key and click update button at the bottom of the prompted window.
 
-![samplevalues](https://user-images.githubusercontent.com/32217921/77641591-5700a580-6f6d-11ea-9766-4b675f618703.png)
+![samplevalues](https://user-images.githubusercontent.com/32217921/78459444-b5dac300-76c1-11ea-8146-64aecd2c3680.png)
 
-Note that the key is now in black color. This means that the key is valid.
+Note that the key now is in vivid color. This means that the key is valid.
 
-![edited](https://user-images.githubusercontent.com/32217921/77643621-c62bc900-6f70-11ea-9c21-fc0edbe52a5d.png)
+![edited](https://user-images.githubusercontent.com/32217921/78459483-eae71580-76c1-11ea-988f-8fc7fab04208.png)
 
 ### Inserting New Line
 
 Insert line breaks by hitting return key as usual.
 
-![return](https://user-images.githubusercontent.com/32217921/77662407-df427300-6f8c-11ea-9797-33736ace9f88.png)
+![return](https://user-images.githubusercontent.com/32217921/78459531-50d39d00-76c2-11ea-837d-eb10b4590ea6.png)
 
-Alternatively, it is possible to insert new line via "\n". It will be converted to new line.
+Alternatively, it is possible to insert new lines by "\n". They will be converted to new lines automatically.
 
-![backslashn](https://user-images.githubusercontent.com/32217921/77662428-e8cbdb00-6f8c-11ea-9a15-3a8f8c57e8ef.png)
+![backslashn](https://user-images.githubusercontent.com/32217921/78459556-82e4ff00-76c2-11ea-935d-6ae06a94690a.png)
 
  ## Add New Languages
  
@@ -70,7 +70,7 @@ public enum Language
 
 New languages will appear automatically in the edit window.
 
-![newlangs](https://user-images.githubusercontent.com/32217921/77647710-f6c33100-6f77-11ea-916f-39a83c6ad96e.png)
+![newlangs](https://user-images.githubusercontent.com/32217921/78459639-128aad80-76c3-11ea-91c9-b0d2fd86f9e0.png)
 
  ## Delete Existing Languages
  
@@ -112,12 +112,14 @@ void Localise()
 }
 ``` 
 
+ ## Easy Management
+ 
 Search among existing keys via search button.
 
-![searchbutton](https://user-images.githubusercontent.com/32217921/77644243-c5476700-6f71-11ea-8442-d330444baa90.png)
+![searchbutton](https://user-images.githubusercontent.com/32217921/78459661-554c8580-76c3-11ea-80f0-11e7d369403a.png)
 
-Edit or delete existing keys easily.
+Chooese, edit or delete existing keys easily.
 
-![editsearch](https://user-images.githubusercontent.com/32217921/77644545-3555ed00-6f72-11ea-822b-0483033e23dc.png)
+![editsearch](https://user-images.githubusercontent.com/32217921/78459734-b2483b80-76c3-11ea-989a-78af7254125d.png)
 
 See the sample scene in Assets/Localisation/Sample folder.
