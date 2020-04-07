@@ -25,9 +25,10 @@ namespace Localisation
             csvLoader = new CSVLoader();
 
             csvLoader.LoadCSV();
+#if UNITY_EDITOR
             csvLoader.UpdateHeaders();
             csvLoader.LoadCSV();
-
+#endif
             UpdateDictionaries();
 
             isInitialised = true;
